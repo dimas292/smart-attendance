@@ -9,17 +9,26 @@ export default function Hero() {
         <h2 className="font-bold text-5xl ">Smart Attendance</h2>
         <h2 className="font-bold text-5xl text-primary">Made Simple</h2>
         <p className="py-8 text-xl">
-          Revolutionary QR code based attendance system that{" "}
-          <p>streamlines workforce management for company ZYZ. Track</p>
+          Revolutionary QR code based attendance system that <br />
+          streamlines workforce management for company ZYX. Track <br />
           manage, and analyze attendance with unprecedented ease.
         </p>
         <div className="flex gap-4">
           <Button className="h-12 w-52">Employee Dashboard</Button>
-          <Button variant="outline" className="h-12 w-52 border-2 border-primary">Operator Dashboard</Button>
+          <Button
+            variant="outline"
+            className="h-12 w-52 border-2 border-primary"
+          >
+            Operator Dashboard
+          </Button>
         </div>
       </div>
       {/* Benefit Card */}
-      <aside className="flex flex-col z-20 rounded-xl absolute top-24 right-10 rotate-2 bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
+      <aside
+        className="flex flex-col z-20 rounded-xl absolute top-24 right-10 
+      rotate-2 hover:rotate-6 transition-transform  bg-white/10 backdrop-blur-md 
+      border border-white/20 shadow-lg"
+      >
         <div className="mx-12 my-8">
           <div className="flex gap-4 items-center">
             <Image src={qr} alt="qr code" width={60} height={60} />

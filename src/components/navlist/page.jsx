@@ -3,30 +3,23 @@ import {
   NavigationMenuLink,
   NavigationMenu,
 } from "@/components/ui/navigation-menu";
-import Link from "next/link";
 
 export default function Navigation() {
   return (
     <NavigationMenu style={{ listStyleType: "none" }}>
       <NavigationMenuItem>
-        <NavigationMenuLink>
-          <Link href="/docs" className="text-lg">Features</Link>
+        <NavigationMenuLink href="#features">
+          <p>Features</p>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink>
-          <Link href="/docs" className="text-lg">How it Works</Link>
-        </NavigationMenuLink>
+        <NavigationMenuLink href="#how-it-works">How it Works</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink>
-          <Link href="/docs" className="text-lg">Benefit</Link>
-        </NavigationMenuLink>
+        <NavigationMenuLink href="#benefits">Benefits</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink>
-          <Link href="/docs" className="text-lg">Contact</Link>
-        </NavigationMenuLink>
+        <NavigationMenuLink href="#contact">Contact</NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenu>
   );
