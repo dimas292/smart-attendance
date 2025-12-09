@@ -10,22 +10,22 @@ export default function Navigation() {
     <NavigationMenu style={{ listStyleType: "none" }}>
       <NavigationMenuItem>
         <NavigationMenuLink>
-          <Link href="/docs">Features</Link>
+          <Link href="/docs" className="text-lg">Features</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink>
-          <Link href="/docs">How it Works</Link>
+          <Link href="/docs" className="text-lg">How it Works</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink>
-          <Link href="/docs">Benefit</Link>
+          <Link href="/docs" className="text-lg">Benefit</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink>
-          <Link href="/docs">Contact</Link>
+          <Link href="/docs" className="text-lg">Contact</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenu>

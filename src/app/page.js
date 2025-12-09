@@ -15,12 +15,12 @@ export default function Home() {
       <header
         className={
           poppins.className +
-          " flex h-[65px] items-center justify-between px-18 border-b"
+          " flex h-[65px] items-center justify-between px-18 border-b sticky top-0 bg-background z-10"
         }
       >
-        <h1 className="font-bold">PT ZYX TBK.</h1>
+        <h1 className="font-bold text-2xl">PT ZYX TBK.</h1>
         <Navigation />
-        <Button className="font-bold ">Login</Button>
+        <Button className="font-bold text-lg">Login</Button>
       </header>
       <content>
         <Hero />

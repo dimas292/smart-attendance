@@ -4,31 +4,32 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="px-18 py-18 relative">
-      <div className="z-0">
-        <h2 className="font-bold text-3xl">Smart Attendance</h2>
-        <h2 className="font-bold text-3xl">Made Simple</h2>
-        <p className="py-4">
+    <section className="mx-auto max-w-4xl py-18 relative overflow-hidden">
+      <div className="relative z-10">
+        <h2 className="font-bold text-5xl ">Smart Attendance</h2>
+        <h2 className="font-bold text-5xl text-primary">Made Simple</h2>
+        <p className="py-8 text-xl">
           Revolutionary QR code based attendance system that{" "}
           <p>streamlines workforce management for company ZYZ. Track</p>
           manage, and analyze attendance with unprecedented ease.
         </p>
         <div className="flex gap-4">
-          <Button>Employee Dashboard</Button>
-          <Button variant="outline">Operator Dashboard</Button>
+          <Button className="h-12 w-52">Employee Dashboard</Button>
+          <Button variant="outline" className="h-12 w-52 border-2 border-primary">Operator Dashboard</Button>
         </div>
       </div>
-      <aside className="flex flex-col z-3 shadow-xl rounded-xl absolute top-24 right-74 rotate-2">
-        <div className="m-12">
+      {/* Benefit Card */}
+      <aside className="flex flex-col z-20 rounded-xl absolute top-24 right-10 rotate-2 bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
+        <div className="mx-12 my-8">
           <div className="flex gap-4 items-center">
             <Image src={qr} alt="qr code" width={60} height={60} />
             <div>
-              <h3 className="font-bold">QR Attendance</h3>
-              <p>Scan & Go</p>
+              <h3 className="font-bold text-lg">QR Attendance</h3>
+              <p className="text-lg">Scan & Go</p>
             </div>
           </div>
 
-          <ul style={{ listStyleType: "disc" }} className="mt-4 ml-4">
+          <ul className="mt-4 ml-4 text-xl list-disc">
             <li>Real-time tracking</li>
             <li>Instant notifications</li>
             <li>Analytics dashboard</li>
@@ -37,19 +38,19 @@ export default function Hero() {
       </aside>
 
       {/* Stats */}
-      <section className="flex gap-8 items-center py-4">
-            <div>
-                  <h3 className="font-bold text-2xl">99.9%</h3>
-                  <p className="text-sm">Accuracy</p>
-            </div>
-            <div>
-                  <h3 className="font-bold text-2xl">5sec</h3>
-                  <p className="text-sm">Check in Time</p>
-            </div>
-            <div>
-                  <h3 className="font-bold text-2xl">22/7</h3>
-                  <p className="text-sm">Monitoring</p>
-            </div>
+      <section className="flex gap-8 items-center py-8">
+        <div>
+          <h3 className="font-bold text-4xl text-primary">99.9%</h3>
+          <p className="text-lg">Accuracy</p>
+        </div>
+        <div>
+          <h3 className="font-bold text-4xl text-primary">5sec</h3>
+          <p className="text-lg">Check in Time</p>
+        </div>
+        <div>
+          <h3 className="font-bold text-4xl text-primary">22/7</h3>
+          <p className="text-lg">Monitoring</p>
+        </div>
       </section>
     </section>
   );
