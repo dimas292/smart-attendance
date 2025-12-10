@@ -6,7 +6,7 @@ import {
 
 export default function Navigation() {
   return (
-    <NavigationMenu style={{ listStyleType: "none" }}>
+    <NavigationMenu style={{ listStyleType: "none"}}>
       <NavigationMenuItem>
         <NavigationMenuLink href="#features">
           <p>Features</p>

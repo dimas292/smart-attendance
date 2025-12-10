@@ -1,6 +1,9 @@
 import { Button } from "../ui/button";
 import qr from "../../../public/qr.png";
 import Image from "next/image";
+import dotOrange from "../../../public/dot_orange.svg";
+import dotGreen from "../../../public/dot_green.svg";
+import dotPurple from "../../../public/dot_purple.svg";
 
 export default function Hero() {
   return (
@@ -38,10 +41,10 @@ export default function Hero() {
             </div>
           </div>
 
-          <ul className="mt-4 ml-4 text-xl list-disc">
-            <li>Real-time tracking</li>
-            <li>Instant notifications</li>
-            <li>Analytics dashboard</li>
+          <ul className="mt-4 ml-4 text-xl">
+            <li className="flex "><Image src={dotOrange} alt="dot orange" width={40} height={40} /> Real-time tracking</li>
+            <li className="flex "><Image src={dotGreen} alt="dot green" width={40} height={40} /> Instant notifications</li>
+            <li className="flex "><Image src={dotPurple} alt="dot purple" width={40} height={40} /> Analytics dashboard</li>
           </ul>
         </div>
       </aside>
