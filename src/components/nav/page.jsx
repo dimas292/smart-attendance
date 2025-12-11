@@ -5,21 +5,24 @@ import {
 } from "@/components/ui/navigation-menu";
 
 export default function Navigation() {
+  
   return (
     <NavigationMenu style={{ listStyleType: "none"}}>
       <NavigationMenuItem>
         <NavigationMenuLink href="#features">
-          <p>Features</p>
+         <p className="text-lg">Features</p>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink href="#how-it-works">How it Works</NavigationMenuLink>
+        <NavigationMenuLink href="#how-it-works">
+          <p className="text-lg">How it Works</p>
+          </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink href="#benefits">Benefits</NavigationMenuLink>
+        <NavigationMenuLink href="#benefits"><p className="text-lg">Benefits</p></NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink href="#contact">Contact</NavigationMenuLink>
+        <NavigationMenuLink href="#contact"><p className="text-lg">Contact</p></NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenu>
   );

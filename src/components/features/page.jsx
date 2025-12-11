@@ -4,6 +4,7 @@ import { FEATURES } from "@/app/constant/features";
 export default function Features() {
     return (
         <section id="features" className="mx-auto max-w-7xl py-18 relative overflow-hidden">
+            
             <div className="relative z-10 text-center py-8">
                 <h2 className="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-500">Powerfull Features</h2>
                 <p className="py-8 text-xl">

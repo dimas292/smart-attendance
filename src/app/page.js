@@ -1,6 +1,6 @@
 "use client";
 
-import Navigation from "@/components/navlist/page";
+import Navigation from "@/components/nav/page";
 import { Button } from "@/components/ui/button";
 import { Poppins } from "next/font/google";
 import Hero from "@/components/hero/page";
@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 import Features from "@/components/features/page";
 import { motion, useScroll } from "motion/react"
 import Link from "next/link";
+import { TimelineDemo } from "@/components/how-it-works/page";
+
 
 const poppins = Poppins({
   weight: ["400", "700"],
@@ -107,6 +109,8 @@ export default function Home() {
       rounded-full opacity-30 blur-3xl animate-blob animation-delay-4000"
       ></div>
       <Features />
+      {/* glow 1 side primary and emerald */}
+      <TimelineDemo />
     </content>
   </main>
 
@@ -114,18 +118,11 @@ export default function Home() {
     <>
       <motion.div
         id="scroll-indicator"
+        className="fixed top-0 left-0 right-0 h-2 bg-gradient-to-r from-primary to-emerald-400"
         style={{
           scaleX: scrollYProgress,
-          position: "fixed",
           zIndex: 9999,
-          top: 0,
-          left: 0,
-          right: 0,
-          height: 8,
-          originX: 0,
-          backgroundColor: "var(--primary)",
           transformOrigin: "0%",
-
         }}
       />
       {page}
