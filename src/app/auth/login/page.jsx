@@ -15,7 +15,6 @@ export default function LoginPage() {
   const toggleTheme = useStore((state) => state.toggleTheme);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [remember, setRemember] = useState(false);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
